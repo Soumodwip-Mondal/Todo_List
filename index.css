@@ -8,14 +8,14 @@ header{
     height: 200px;
     display: flexbox;
     color: white;
-    background-color: #da3b38;
+    background-color: #2C3E50;
+    align-items: center;
     align-content: center;
 }
-/* .inline{
-    display: inline-block;
-}*/
-main{
+
+body{
     background-color: #E0DFD5;
+    font-family: Arial, sans-serif;
 }
 form {
     width: 1100px;
@@ -25,21 +25,54 @@ form {
     align-items: center;
     align-content: center;
 }
-.fix{
-   
+#TodoMessage{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 60%;
+    height: 2.5rem;
+    margin: 0;
+    padding: 0;
+    border-right: none;
+}
+#add{
+    width: 200px;
+    height: 2.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border-left: none;
+    padding: 10px 20px;
+    cursor: pointer; 
+}
+.todo p {
+    margin: 0;
+    flex: 1;
+    padding: 0 10px;
+}
+
+.del{
+    background-color: #df2a27;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 #todolist{
     width: 70%;
-    border: 2px solid black;
+    border: 1px solid black;
     margin: 0 auto;
 }
 .todo{
    width: 100%;
    height: 4rem;
-   border: 2px solid palevioletred;
+   border: 2px solid black;
    display: flex;
    align-items: center;
    justify-content: space-between;
    padding-left: 10px;
    padding-right: 10px;
+}
+
+div.todo:hover{
+    background-color: #c8baba;
 }
