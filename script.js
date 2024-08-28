@@ -25,7 +25,8 @@ const addTodo = (todoText) => {
         const delButton = document.createElement("button");
         delButton.className = "del";
         delButton.textContent = "delete";
-        delButton.onclick = () => {
+        delButton.onclick = (e) => {
+            e.preventDefault();
             todoList.removeChild(newTodo);
         };
         newTodo.appendChild(delButton);
